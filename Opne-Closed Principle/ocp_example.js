@@ -70,5 +70,8 @@ printQuiz(questions);
  * Here printQuiz function is written in such a way that 
  * it will not get modified whenever a new question type 
  * will get added. In this way function is open for extension of its functionality 
- * but closed for any changes to add any feature
+ * but closed for any changes to add any feature.
+ * By using above functionality of code is extended without modification
+ * Whenenver we lot of If-else/switch statements we should be modifying our code to 
+ * do this.
  */
