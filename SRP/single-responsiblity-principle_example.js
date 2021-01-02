@@ -71,4 +71,3 @@ function addCalories(calories) {
 
 addCalories(1000);
 addCalories(500);
-no
