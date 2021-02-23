@@ -1,3 +1,8 @@
+/**
+ *The Interface Segregation Principle (ISP) states that a class must not have to implement any interface element that is not required by the particular class. 
+ *This will ensure the class and ultimately the whole application is very robust and easy to maintain and expand if required.
+ */
+
 class Entity {
     constructor(name) {
         this.name = name
