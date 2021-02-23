@@ -1,10 +1,13 @@
 /**
  * To fix previous Problem we can create some how Shape class as parent can have 
  */
-
+/**
+ * Here area function is the abstract method of the both the classes and children can have their own implementation.
+ * SetHeight and SetWidth methods are not part of the abstraction so it can be implemented by children per their own requirements.
+ */
 class Shape {
     area() {
-        //logic goes here
+        //abstraction logic goes here which can be followed by children
     }
 }
 
@@ -30,15 +33,9 @@ class Rectangle extends Shape{
 class Square extends Shape {
     setWidth(width) {
         this.width = width;
-        this.height = width;
     }
-
-    setHeight(height) {
-        this.width = width;
-        this.height = height;
+    
+    area() {
+        return this.width * this.width;
     }
-}
-
-function increaseShapeWidth(rectangle) {
-    return rectangle.setWidth(rectangle.width + 1);
 }
